@@ -10,7 +10,7 @@ https://github.com/harrison3000/terep2-re/commit/9319f3e17fbdfadce236afa8ef08306
 ### pre-requisit
 I assume you are on Linux and you must have docker on your system. If not, you can follow the guide from [digitalocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04) to install it.
 
-## Steps for Linux build
+## Steps for Linux build - (in the linux folder)
 1. clone this repository to a folder:
 
 `git clone https://github.com/Bacce/terep2-re-build-guide`
@@ -56,5 +56,23 @@ I assume you are on Linux and you must have docker on your system. If not, you c
 12. run the executable from the game folder
 
 
-## Steps for Windows build from Linux
-soon...
+## Steps for Windows build from Linux - (in the windows folder)
+
+1-6. same as for linux build
+
+7. make the shell script executable
+
+`chmod +x build_windows.sh`
+
+8. run the build
+
+`./build_windows.sh`
+
+9. exit from the docker environment
+
+`exit`
+
+10. in the build folder you should find the terep2re32.exe and terep2re64.exe files, copy it into a terep 2 folder, ignore the rest of the .o files
+
+11. run the executable from the game folder
+

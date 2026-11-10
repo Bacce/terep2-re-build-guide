@@ -1,0 +1,13 @@
+services:
+  build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: terep2-build-linux
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    command: sleep infinity

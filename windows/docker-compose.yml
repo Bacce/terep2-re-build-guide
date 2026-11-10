@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: terep2-build
+    container_name: terep2-build-windows
     working_dir: /workspace
     volumes:
       - .:/workspace
